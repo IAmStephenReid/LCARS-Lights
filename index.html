@@ -1,0 +1,122 @@
+<!-- LCARS SDK 19182.4
+- Credit to LCARS-SDK and Aricwithana
+- https://github.com/AricwithanA/LCARS-SDK/blob/master/LICENSE.md
+- For more information please go to http://www.lcarssdk.org.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <title>LCARS 66 | Lights</title>
+    <!-- Core and Widgets CSS-->    
+    <link rel="stylesheet" type="text/css" href="css/lcars.css">
+</head>
+
+<body ontouchstart="" onload="">
+<div class="wrapper row flex-h" id="wpr_viewport">
+    <!--Main Frame-->
+    <div class="wrapper column flex-v flex-c-h hide-on-iphone" id="wpr_mainView">
+        <!--Header-->    
+        <div class="row header flex-h">
+            <!--Header Column-->    
+            <div class="column flex-v">
+                <div class="button bg-purple-3 step-two"  data-label="LCARS 40274"></div>
+                <div class="elbow bottom-left bg-purple-5 flex-c-v default horizontal" data-label="02-654598">
+                    <div class="bar">
+                        <div class="block"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper flex-c-h flex-v">
+                <!--Header Content-->    
+                <div class="wrapper content flex-c-v">
+                    <div class="title text-orange-4">LCARS Access 66</div>
+                    <!--<div class="subtitle text-purple-3">Stardate:<span id="StarDate"></span></div>-->
+                    <div class="wrapper flex-h button-wrap">
+                        <div class="button bg-orange-5 round" data-label="9886-234"></div>
+                        <div class="button bg-purple-1 round" data-label="0128-069"></div> 
+                        <div class="button bg-blue-1 round" data-label="1014-819"></div>                       
+                        <!--<a class="button bg-green-1 round blink" target="_blank" data-label="Docs" href="https://github.com/Aricwithana/LCARS-SDK/wiki"></a>-->
+                    </div>
+                </div>
+                <!--Header Bar Row-->    
+                <div class="row frame flex-h">
+                    <div class="bar bg-blue-2"></div>
+                    <div class="bar bg-blue-1"></div>
+                    <div class="bar bg-blue-3"></div>
+                    <div class="bar bg-green-1 flex-c-h"></div>
+                    <div class="bar bg-blue-3"></div>
+                    <div class="bar bg-blue-2"></div>
+                    <div class="bar bg-blue-3"></div>
+                </div>
+            </div>
+        </div>
+        <!--Body-->    
+        <div class="wrapper main flex-h flex-c-v">
+            <!--Body Button Column-->    
+            <div class="wrapper column flex-v">
+                <div class="elbow top-left bg-red-1 step-two default horizontal">
+                    <div class="bar">
+                        <div class="block"></div>
+                    </div>
+                </div>
+                <div class="button bg-red-1 step-two" onclick="toggle('6', 'lights');" data-type="lights" data-label="Office" href="#"></div>
+                <div class="button bg-orange-2 step-two" onclick="toggle('16', 'groups');" data-type="groups" id="control" data-altLabel="Man Cave" href="#"></div>
+                <div class="button bg-orange-1 flex-c-v"></div>
+            </div>
+            <!--Body Bar Row-->    
+            <div class="column flex-c-h flex-v">
+                <div class="row flex-h frame">
+                    <div class="bar bg-orange-3"></div>
+                    <div class="bar bg-orange-3 small"></div>
+                    <div class="bar bg-purple-3"></div>
+                    <div class="bar bg-purple-3 flex-c-h"></div>
+                </div>
+                <!--Body Content-->    
+                
+                <div class="wrapper content flex-c-v" style=" overflow:auto;">
+
+                <div style="padding-top:20px;" class="complex-button">
+                    <div class="cap round-left bg-orange-2"></div>
+                    <div class="block bg-orange-3"></div>
+                    <a class="button round-right bg-purple-3" onclick="toggle('5', 'lights');" data-label="Main Bedroom" href="#"></a>
+                </div>
+                
+                <div style="padding-top:20px;" class="complex-button">
+                    <div class="cap round-left bg-orange-2"></div>
+                    <div class="block bg-orange-3"></div>
+                    <a class="button round-right bg-blue-3" onclick="toggle('1', 'groups');" data-label="Kitchen" href="#"></a>
+                </div>
+
+                <div style="padding-top:20px;" class="complex-button">
+                    <div class="cap round-left bg-orange-2"></div>
+                    <div class="block bg-orange-3"></div>
+                    <a class="button round-right bg-blue-1" onclick="toggle('8', 'lights');" data-label="Living Room" href="#"></a>
+                </div>
+
+                <div style="padding-top:20px;" class="complex-button">
+                    <div class="cap round-left bg-orange-2"></div>
+                    <div class="block bg-orange-3"></div>
+                    <a class="button round-right bg-purple-4" onclick="toggle('3', 'lights');" data-label="Landing" href="#"></a>
+                </div>
+                
+                <div style="padding-top:20px;" class="complex-button">
+                    <div class="cap round-left bg-orange-2"></div>
+                    <div class="block bg-orange-3"></div>
+                    <a class="button round-right bg-orange-1" onclick="toggle('4', 'lights');" data-label="Hall" href="#"></a>
+                </div>
+
+                <div style="padding-top:20px;" class="complex-button">
+                    <div class="cap round-left bg-orange-2"></div>
+                    <div class="block bg-orange-3"></div>
+                    <a class="button round-right bg-purple-2" onclick="toggle('7', 'lights');" data-label="Beauty Bedroom" href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/toggleLight.js"></script>
+</body>
+</html>
